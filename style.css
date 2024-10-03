@@ -222,18 +222,8 @@ h1, h2, h3, h4, p {
 }
 
 .feature img {
-    max-width: 701px;
-    height: auto;
-}
-
-#entity-image {
-    width: 557px;
-    height: auto;
-}
-
-#access-image {
-    width: 557px;
-    height: auto;
+    width: auto;
+    height: 500px;
 }
 
 #footer {
