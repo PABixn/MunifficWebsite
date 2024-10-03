@@ -282,7 +282,7 @@ h1, h2, h3, h4, p {
     align-items: center;
 }
 
-#logo h1 {
+#logo h2 {
     font-size: 48px;
 }
 
@@ -465,7 +465,7 @@ h1, h2, h3, h4, p {
         justify-content: center;
     }
 
-    #logo h1 {
+    #logo h2 {
         font-size: 28px;
     }
 
@@ -602,7 +602,7 @@ h1, h2, h3, h4, p {
         font-size: 16px;
     }
 
-    #logo h1 {
+    #logo h2 {
         font-size: 32px;
     }
 
@@ -733,7 +733,7 @@ h1, h2, h3, h4, p {
         font-size: 18px;
     }
 
-    #logo h1 {
+    #logo h2 {
         font-size: 40px;
     }
 
@@ -838,7 +838,7 @@ h1, h2, h3, h4, p {
         font-size: 13px;
     }
 
-    #logo h1 {
+    #logo h2 {
         font-size: 48px;
     }
 
