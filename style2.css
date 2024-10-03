@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700;900&display=swap');
 
+@keyframes fadeInUp
+{
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .fade-in-up
+  {
+    animation: 1.5s both fadeInUp;
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -302,7 +318,6 @@ h1, h2, h3, h4, p {
     font-weight: 500;
 }
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     #main-header
     {
@@ -480,7 +495,6 @@ h1, h2, h3, h4, p {
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
     #main-header {
         margin-top: 150px;
@@ -613,7 +627,6 @@ h1, h2, h3, h4, p {
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     #main-header {
         margin-top: 200px;
@@ -746,10 +759,6 @@ h1, h2, h3, h4, p {
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-/* The default styles apply here. */
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     #main-header {
         font-size: 96px;
