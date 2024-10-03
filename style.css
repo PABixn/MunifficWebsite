@@ -10,11 +10,17 @@
       transform: translateY(0);
       opacity: 1;
     }
-  }
-  .fade-in-up
-  {
+}
+
+.fade-in-up-on-scroll
+{
+    opacity: 0;
+}
+
+.fade-in-up
+{
     animation: 1.5s both fadeInUp;
-  }
+}
 
 body {
     margin: 0;
@@ -327,9 +333,9 @@ h1, h2, h3, h4, p {
     {
         width: 100%;
         margin-top: 10px;
-        font-size: 10px;
+        font-size: 14px;
         display: flex;
-        gap: 30px;
+        gap: 20px;
     }
 
     #GetStartedButton {
@@ -500,8 +506,7 @@ h1, h2, h3, h4, p {
     }
 
     #sub-header {
-        margin-top: 20px;
-        font-size: 24px;
+        font-size: 18px;
         gap: 20px;
     }
 
@@ -632,8 +637,7 @@ h1, h2, h3, h4, p {
     }
 
     #sub-header {
-        margin-top: 30px;
-        font-size: 32px;
+        font-size: 25px;
         gap: 30px;
     }
 
@@ -757,7 +761,17 @@ h1, h2, h3, h4, p {
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 991px) and (max-width: 1100px)
+{
+    #sub-header
+    {
+        font-size: 30px;
+        gap: 58px;
+    }
+}
+
+@media only screen and (min-width: 1200px)
+{
     #main-header {
         font-size: 96px;
     }
