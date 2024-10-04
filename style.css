@@ -12,6 +12,17 @@
     }
 }
 
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 .fade-in-up-on-scroll
 {
     opacity: 0;
@@ -91,6 +102,32 @@ h1, h2, h3, h4, p {
     background-color: #62587B;
     border-radius: 14px;
     padding: 19px 38px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#GetStartedButton:hover
+{
+    background-color: #504666; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-3px); 
+}
+
+#GetStartedButton:active
+{
+    background-color: #403659; 
+    transform: translateY(1px); 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+#GetStartedButton svg
+{
+    transition: transform 0.3s ease; 
+}
+
+
+#GetStartedButton:hover svg
+{
+    transform: translateX(5px); 
 }
 
 #engine-screenshot
@@ -336,7 +373,7 @@ h1, h2, h3, h4, p {
     margin: 0;
 }
 
-a:active
+a:not([id]):active
 {
     color: #ddd;
 }
@@ -348,11 +385,11 @@ a
     text-decoration: none;
 }
   
-a:hover {
+a:not([id]):hover {
     color: #ddd;
 }
 
-a::before {
+a:not([id])::before {
     content: "";
     position: absolute;
     display: block;
@@ -365,7 +402,7 @@ a::before {
     transition: transform 0.3s ease;
 }
 
-a:hover::before {
+a:not([id]):hover::before {
     transform: scaleX(1);
 }
 
