@@ -110,6 +110,7 @@ h1, h2, h3, h4, p {
     background-color: #504666; 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
     transform: translateY(-3px); 
+    cursor: pointer;
 }
 
 #GetStartedButton:active
@@ -185,7 +186,6 @@ h1, h2, h3, h4, p {
     font-size: 24px;
     font-weight: 500;
     width: 39.1vw;
-    margin-top: 38px;
 }
 
 .about-block {
@@ -1197,7 +1197,7 @@ a:not([id]):hover::before {
     }
 
     .about-block h2 {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     .about-block p {
