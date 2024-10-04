@@ -21,3 +21,12 @@ elementsToFadeInUpOnScroll.forEach(element => {
 elementsToFadeInUpOnEnter.forEach(element => {
   observer.observe(element);
 });
+
+function scrollWithOffset(event, id, offset) {
+  event.preventDefault();
+  const element = document.getElementById(id);
+  const yOffset = offset; // Adjust this value to scroll a bit further (e.g., 50px above the element)
+  const yPosition = element.getBoundingClientRect().top + window.scrollY + yOffset;
+  
+  window.scrollTo({ top: yPosition, behavior: 'smooth' });
+}

@@ -42,12 +42,12 @@
                 <h3 class="fade-in-up-on-scroll">Create quicker</h3>
             </div>
 
-            <div class="fade-in-up-on-scroll" id="GetStartedButton">
+            <a id="cta" onclick="scrollWithOffset(event, 'about-section', 100)" href="#about-section"><div class="fade-in-up-on-scroll" id="GetStartedButton">
                 <h4>Get started with Muniffic</h4>
                 <svg xmlns="http://www.w3.org/2000/svg" width="1.5vw" height="1.8vw" viewBox="0 0 22 24" fill="none">
                     <path d="M21.2874 12.4022L0.987874 23.4191L1.60094 0.333135L21.2874 12.4022Z" fill="white"/>
                 </svg>
-            </div>
+            </div></a>
 
             <img class="fade-in-up-on-scroll" id="engine-screenshot" src="img/engine-screenshot.png" alt="Screenshot of the Muniffic game engine interface">
         </div>
@@ -128,10 +128,10 @@
                 <div id="right-panel">
                     <div id="nav">
                         <h3 class="fade-in-up-on-scroll">Navigation</h3>
-                        <h5 class="fade-in-up-on-scroll">Discover</h5>
-                        <h5 class="fade-in-up-on-scroll">Preview</h5>
-                        <h5 class="fade-in-up-on-scroll">About</h5>
-                        <h5 class="fade-in-up-on-scroll">Meet Bob</h5>
+                        <h5 class="fade-in-up-on-scroll"><a onclick="scrollWithOffset(event, 'header-section', 0)" href="#header-section" >Discover</a></h5>
+                        <h5 class="fade-in-up-on-scroll"><a onclick="scrollWithOffset(event, 'engine-screenshot', -100)" href="#engine-screenshot">Preview</a></h5>
+                        <h5 class="fade-in-up-on-scroll"><a onclick="scrollWithOffset(event, 'about-section', 100)" href="#about-section">About</a></h5>
+                        <h5 class="fade-in-up-on-scroll"><a onclick="scrollWithOffset(event, 'meet-bob-section', 50)" href="#meet-bob-section">Meet Bob</a></h5>
                     </div>
                     <div id="contact">
                         <h3 class="fade-in-up-on-scroll">Contact Us</h3>
