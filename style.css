@@ -296,16 +296,16 @@ h1, h2, h3, h4, p {
 
 #right-panel {
     display: flex;
-    gap: 192px;
+    gap: 10vw;
     align-items: center;
 }
 
 #right-panel h3 {
-    font-size: 15px;
+    font-size: 30px;
 }
 
 #right-panel h5 {
-    font-size: 13px;
+    font-size: 26px;
 }
 
 #logo-image {
@@ -1228,16 +1228,7 @@ a:not([id]):hover::before {
 
     #right-panel {
         flex-direction: row;
-        gap: 192px;
         margin-top: 0;
-    }
-
-    #right-panel h3 {
-        font-size: 15px;
-    }
-
-    #right-panel h5 {
-        font-size: 13px;
     }
 
     #logo h2 {
