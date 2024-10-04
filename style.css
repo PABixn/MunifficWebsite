@@ -184,6 +184,7 @@ h1, h2, h3, h4, p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 50px;
 }
 
 .feature:nth-of-type(odd) {
@@ -223,7 +224,7 @@ h1, h2, h3, h4, p {
 
 .feature img {
     width: auto;
-    height: 500px;
+    max-height: 26vw;
 }
 
 #footer {
@@ -391,21 +392,17 @@ h1, h2, h3, h4, p {
         margin-top: 100px;
     }
 
-    #bob-wrap {
-        gap: 50px;
-    }
-
-    .feature {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .feature:nth-of-type(odd) {
         flex-direction: column;
     }
 
     .feature-block {
         width: 90%;
+    }
+
+    .feature img
+    {
+        max-height: 250px !important;
     }
 
     .feature-block h3 {
@@ -420,13 +417,6 @@ h1, h2, h3, h4, p {
         width: 100%;
         font-size: 14px;
         margin-top: 10px;
-    }
-
-    .feature img {
-        width: 80%;
-        max-width: 300px;
-        height: auto;
-        margin-top: 20px;
     }
 
     #footer
@@ -568,15 +558,6 @@ h1, h2, h3, h4, p {
             margin-top: 100px;
         }
     
-        #bob-wrap {
-            gap: 50px;
-        }
-    
-        .feature {
-            flex-direction: column;
-            align-items: center;
-        }
-    
         .feature:nth-of-type(odd) {
             flex-direction: column;
         }
@@ -597,13 +578,6 @@ h1, h2, h3, h4, p {
             width: 100%;
             font-size: 14px;
             margin-top: 10px;
-        }
-    
-        .feature img {
-            width: 80%;
-            max-width: 300px;
-            height: auto;
-            margin-top: 20px;
         }
     
         #footer
@@ -745,22 +719,18 @@ h1, h2, h3, h4, p {
             font-size: 9.5vw;
             margin-top: 100px;
         }
-    
-        #bob-wrap {
-            gap: 50px;
-        }
-    
-        .feature {
-            flex-direction: column;
-            align-items: center;
-        }
-    
+
         .feature:nth-of-type(odd) {
             flex-direction: column;
         }
     
         .feature-block {
             width: 90%;
+        }
+
+        .feature img
+        {
+            max-height: 80vw !important;
         }
     
         .feature-block h3 {
@@ -775,13 +745,6 @@ h1, h2, h3, h4, p {
             width: 100%;
             font-size: 4.6vw;
             margin-top: 10px;
-        }
-    
-        .feature img {
-            width: 80%;
-            max-width: 300px;
-            height: auto;
-            margin-top: 20px;
         }
     
         #footer
@@ -905,15 +868,6 @@ h1, h2, h3, h4, p {
         margin-top: 100px;
     }
 
-    #bob-wrap {
-        gap: 80px;
-    }
-
-    .feature {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .feature:nth-of-type(odd) {
         flex-direction: column;
     }
@@ -936,11 +890,9 @@ h1, h2, h3, h4, p {
         margin-top: 15px;
     }
 
-    .feature img {
-        width: 70%;
-        max-width: 500px;
-        height: auto;
-        margin-top: 30px;
+    .feature img
+    {
+        max-height: 300px !important;
     }
 
     #footer-wrap {
@@ -1036,15 +988,6 @@ h1, h2, h3, h4, p {
         margin-top: 120px;
     }
 
-    #bob-wrap {
-        gap: 100px;
-    }
-
-    .feature {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .feature:nth-of-type(odd) {
         flex-direction: column;
     }
@@ -1067,11 +1010,9 @@ h1, h2, h3, h4, p {
         margin-top: 20px;
     }
 
-    .feature img {
-        width: 60%;
-        max-width: 600px;
-        height: auto;
-        margin-top: 40px;
+    .feature img
+    {
+        max-height: 300px !important;
     }
 
     #footer-wrap {
@@ -1171,10 +1112,6 @@ h1, h2, h3, h4, p {
         font-size: 24px;
     }
 
-    .feature img {
-        max-width: 701px;
-    }
-
     #footer-wrap {
         flex-direction: row;
         align-items: flex-start;
@@ -1210,5 +1147,28 @@ h1, h2, h3, h4, p {
     #footer p {
         font-size: 19px;
         margin-top: 96px;
+    }
+}
+
+@media only screen and (max-width: 1380px)
+{
+    .feature {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .feature:nth-of-type(odd) {
+        flex-direction: column;
+    }
+
+    .feature img
+    {
+        max-height: 500px;
+    }
+
+    #bob-wrap
+    {
+        gap: 50px;
     }
 }
